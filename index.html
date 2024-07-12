@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Komuuuu</strong>
+                        <p>
+                            Tula bss yevda sangnar baccha ki aplya madhat kitipn nok zhok zhali tari pn tuzha hath sodnar nhi
+                            yacha promise karte tula. Tu mazhya sathi sarv ahes tula kadhich ekta kuthe jau denar nhi hamesha tuzhya
+                            sobat hoto ahe ani hameshach rahnar. I Love You Baby
+                            Happy Birthday Sweetie 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
